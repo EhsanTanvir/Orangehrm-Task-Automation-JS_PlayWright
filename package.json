@@ -1,0 +1,21 @@
+{
+  "name": "orangehrm-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation for OrangeHRM",
+  "scripts": {
+    "setup": "node setup.js",
+    "pretest": "npm run setup",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:single": "npx playwright test tests/orangeHRM.spec.js --headed",
+    "clean": "rm -rf screenshots/*.png test-results playwright-report",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
